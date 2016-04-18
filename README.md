@@ -1,9 +1,10 @@
-# Banker-OFX [![CI Build Status](https://secure.travis-ci.org/juliancheal/Banker-OFX.png?branch=master)][travis] [![Dependency Status](https://gemnasium.com/juliancheal/Banker-OFX.png?travis)][gemnasium]
+# OFX
 
-[travis]:http://travis-ci.org/juliancheal/Banker-OFX
-[gemnasium]:https://gemnasium.com/juliancheal/Banker-OFX
+A Ruby OFX (Open Financial Exchange) parser this is a fork from Kyle Welsby who originally forked from Anna Cruz.
 
-A simple OFX (Open Financial Exchange) parser originally forked from Nando Vieira. Now supports Bank Accounts and Credit Cards as well as Multiple Accounts.
+The Banker-OFX (Kyle Welsby's fork) supports Bank Accounts and Credit Cards as well as Multiple Accounts.
+
+This version supports more modern versions of Ruby
 
 ### Usage
 
@@ -33,14 +34,20 @@ A simple OFX (Open Financial Exchange) parser originally forked from Nando Vieir
 #### Ruby
 * 1.9.2
 * 1.9.3
+* 2.0.0
 
 #### OFX
 * 1.0.2
 * 2.1.1
 
-### ToDo
-1. Support other OFX Versions
-
 ### Original Fork
 
-* Nando Vieira - https://github.com/fnando/ofx
+* Anna Cruz - https://github.com/annacruz/ofx
+
+### Banker-OFX Fork
+
+* Kyle Welsby - https://github.com/kylewelsby/Banker-OFX
+
+### Original Creator
+
+* Nando Vieira - http://simplesideias.com.br
