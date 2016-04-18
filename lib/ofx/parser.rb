@@ -11,7 +11,7 @@ module OFX
         prepare(content)
       end
 
-    private
+      private
 
       def open_resource(document)
         return document if document.respond_to?(:read)
@@ -64,8 +64,8 @@ module OFX
       end
 
       def utf8_converter(string)
-        return string if Kconv.isutf8(string)
-        Iconv.conv("UTF-8", "LATIN1//IGNORE", string)
+        return string if string.encoding == Encoding::UTF_8
+        string.encode('UTF-8', invalid: :replace, undef: :replace, replace: '')
       end
     end
   end

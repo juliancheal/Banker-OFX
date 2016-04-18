@@ -1,19 +1,18 @@
-require "open-uri"
-require "nokogiri"
-require "bigdecimal"
+require 'open-uri'
+require 'nokogiri'
+require 'bigdecimal'
 
-require "iconv"
-require "kconv"
+require 'kconv'
 
-require "ofx/errors"
-require "ofx/parser"
-require "ofx/parser/ofx102"
-require "ofx/parser/ofx211"
-require "ofx/foundation"
-require "ofx/balance"
-require "ofx/account"
-require "ofx/transaction"
-require "ofx/version"
+require 'ofx/errors'
+require 'ofx/parser'
+require 'ofx/parser/ofx102'
+require 'ofx/parser/ofx211'
+require 'ofx/foundation'
+require 'ofx/balance'
+require 'ofx/account'
+require 'ofx/transaction'
+require 'ofx/version'
 
 def OFX(resource, &block)
   parser = OFX::Parser::Base.new(resource).parser
