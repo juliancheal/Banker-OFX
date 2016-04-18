@@ -1,7 +1,7 @@
-# Banker-OFX [![CI Build Status](https://secure.travis-ci.org/BritRuby/Banker-OFX.png?branch=master)][travis] [![Dependency Status](https://gemnasium.com/BritRuby/Banker-OFX.png?travis)][gemnasium]
+# Banker-OFX [![CI Build Status](https://secure.travis-ci.org/juliancheal/Banker-OFX.png?branch=master)][travis] [![Dependency Status](https://gemnasium.com/juliancheal/Banker-OFX.png?travis)][gemnasium]
 
-[travis]:http://travis-ci.org/BritRuby/Banker-OFX
-[gemnasium]:https://gemnasium.com/BritRuby/Banker-OFX
+[travis]:http://travis-ci.org/juliancheal/Banker-OFX
+[gemnasium]:https://gemnasium.com/juliancheal/Banker-OFX
 
 A simple OFX (Open Financial Exchange) parser originally forked from Nando Vieira. Now supports Bank Accounts and Credit Cards as well as Multiple Accounts.
 
