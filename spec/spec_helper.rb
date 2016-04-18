@@ -6,20 +6,19 @@ unless ENV['TRAVIS']
 end
 
 require 'rspec'
-require "ofx"
+require 'ofx'
 
 RSpec.configure do |config|
   config.order = :rand
-  config.color_enabled = true
 
-  config.filter_run :focus => true
-  config.run_all_when_everything_filtered = true
+  # TODO: Change Should to Expect
+  config.expect_with(:rspec) { |c| c.syntax = :should }
 end
 
 RSpec::Matchers.define :have_key do |key|
   match do |hash|
     hash.respond_to?(:keys) &&
-    hash.keys.kind_of?(Array) &&
-    hash.keys.include?(key)
+      hash.keys.is_a?(Array) &&
+      hash.keys.include?(key)
   end
 end
